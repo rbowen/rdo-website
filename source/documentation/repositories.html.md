@@ -24,6 +24,8 @@ If using RHEL it's assumed that `rhel-7-server-rpms` is enabled by default. RDO 
 
 The `Optional` channel is not available for CentOS or Scientific Linux. The required packages are included in the main repositories for those distributions. `Extras` is enabled by default on CentOS 7.
 
+An additional `kvm-common` repository is provided by the CentOS Virtualization SIG that includes enhanced builds of QEMU and supporting projects for use with RDO and oVirt. To enable the `kvm-common` repository install the [centos-release-qemu-ev]( http://mirror.centos.org/centos/7/virt/x86_64/kvm-common/centos-release-qemu-ev-1.0-1.el7.noarch.rpm) package.
+
 ### Red Hat OpenStack Platform
 
 The separate [Red Hat OpenStack Platform](https://access.redhat.com/products/red-hat-openstack-platform/) product does **not** require the `Optional`, `Extras`, and `RH Common` channels enabled.
